@@ -1,0 +1,24 @@
+<img src="assets/etudiant.jpg" alt="etudiant" class="resize">
+<h3>Liste des étudiants</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>Adresse</td>
+            <td>Mail</td>
+            <td>Genre</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+        <tr *ngFor="let etudiant of tabEtudiant">
+            <td>{{ etudiant.getidCand() }}</td>
+            <td>{{ etudiant.getnom() }}</td>
+            <td>{{ etudiant.getprenom() }}</td>
+            <td>{{ etudiant.getrue() + "," + etudiant.getcp() + "," + etudiant.getville() }}</td>
+            <td>{{ etudiant.getcourriel() }}</td>
+            <td>{{ etudiant.getgenre() }}</td>
+            <td>{{ etudiant.getage() }}</td>
+        </tr>
+</table>

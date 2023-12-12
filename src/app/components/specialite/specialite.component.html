@@ -1,0 +1,14 @@
+<img src="assets/specialite.png" alt="specialite" class="resize">
+<h3>Liste des spécialités</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Libellé</td>
+        </tr>
+    </thead>
+        <tr *ngFor="let specialite of tabService">
+            <td>{{ specialite.getidSpec() }}</td>
+            <td>{{ specialite.getlibelle() }}</td>
+        </tr>
+</table>
